@@ -15,6 +15,7 @@ void Event::GenerateEvent(Player& p)
 	if (i < 10)
 	{
 		std::cout << "Enemy Encounter" << std::endl;
+		EnemyEncounter(p);
 	}
 	else if (1 < 7)
 	{
@@ -45,24 +46,52 @@ void Event::EnemyEncounter(Player& p)
 		playerTurn = false;
 	}
 	std::cout << "-----New Enemy Encounter-----" << std::endl;
-
+	std::string n[3] = { "GOD", "JESUS", "PEDRO" };
 	int level = p.GetLevel();
 	int hp = level * 10;
-	int damageMin = rand() % level + 1;
-	int damageMax = rand() % level * 2;
-	int currentDamage = rand() / (damageMax - damageMin + 1);
+	int damage = rand() % p.GetDamageMin() + 1;
 	int defence = rand() % level;
 	int exp = level * 10;
-	baseEnemy = new Enemy("", level, hp, currentDamage, defence, exp);
-	while (!playerTurn || !enemyDefeated || !escape)
+	int randName = rand() % 3;
+	switch (randName)
+	{
+	case 0:
+		level = p.GetLevel() + 6;
+		hp = level * 13;
+		damage = rand() % p.GetDamageMin() + 6 + 3;
+		defence = rand() % level + 2;
+		exp = level * 10;
+		break;
+	case 1:
+		level = p.GetLevel() + 6;
+		hp = level * 13;
+		damage = rand() % p.GetDamageMin() + 6 + 3;
+		defence = rand() % level + 2;
+		exp = level * 10;
+		break;
+	case 2:
+		level = p.GetLevel() + 6;
+		hp = level * 13;
+		damage = rand() % p.GetDamageMin() + 6 + 3;
+		defence = rand() % level + 2;
+		exp = level * 10;
+		break;
+	default:
+		break;
+	}
+	baseEnemy = new Enemy(n[randName], level, hp, damage, defence, exp);
+	int attackRoll = 0;
+	int defenceRoll = 0;
+	int escapeRand = 0;
+	while (!playerDefeated && !enemyDefeated && !escape)
 	{
 		if (playerTurn)
 		{
+			std::cout << "You have encounterer GOD." << std::endl;
 			std::cout << "Choose your action: " << std::endl;
 			std::cout << "1: attack" << std::endl;
 			std::cout << "2: Defend" << std::endl;
-			std::cout << "3: " << std::endl;
-			std::cout << "4: " << std::endl;
+			std::cout << "3: Character Sheet" << std::endl;
 			std::cout << "0: escape" << std::endl;
 
 		}
@@ -70,8 +99,7 @@ void Event::EnemyEncounter(Player& p)
 		switch (choice)
 		{
 		case 0:
-			int scapeRand = (rand() % 100);
-			if (scapeRand > 25)
+			if (escapeRand > 25)
 			{
 				std::cout << "Escaped...." << std::endl;
 				escape = true;
@@ -79,15 +107,17 @@ void Event::EnemyEncounter(Player& p)
 			break;
 		case 1:
 			std::system("cls");
-			int attackRoll = rand() % 100 + 1;
-			if (attackRoll > (50 - p.);
+			if (attackRoll > (50 - p.GetDexterity()))
 			{
 				std::cout << "Player hit Enemy" << std::endl;
-				baseEnemy->TakeDamage(p.DoDamage())
+				baseEnemy->TakeDamage(p.DoDamage());
 			}
 			break;
 		case 2:
-
+			if (defenceRoll > 50 - p.DoDamage())
+			{
+				std::cout << "Player is defending" << std::endl;
+			}
 			break;
 
 		case 3:
@@ -103,19 +133,21 @@ void Event::EnemyEncounter(Player& p)
 		}
 		playerTurn = false;
 		if (playerDefending)
-	}
-	else
-	{
-		std::cout << "--------Enemy Turn---------" << std::endl;
-		if (!baseEnemy->IsAlive())
 		{
-			enemyDefeated = true;
-			std::cout << "Enemy hit Player" << std::endl;
 		}
-	}
+		else
+		{
+			std::cout << "--------Enemy Turn---------" << std::endl;
+			if (!baseEnemy->IsAlive())
+			{
+				enemyDefeated = true;
+				std::cout << "Enemy hit Player" << std::endl;
+			}
+		}
 	}
 }
 
 void Event::PuzzleEncounter(Player& p)
 {
+
 }

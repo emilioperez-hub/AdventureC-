@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Character.h"
 #include "Player.h"
+#include "Event.h"
 #include "Enemy.h"
 
 
@@ -24,6 +25,10 @@ public:
 	void NewPlayer();
 	void NewEnemy();
 	void PrintPlayerStats();
+
+	void newEvent();
+
+	void SkillUp();
 
 	bool GetPlaying();
 };

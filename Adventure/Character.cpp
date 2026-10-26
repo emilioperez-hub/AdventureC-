@@ -32,7 +32,7 @@ void Character::PrintStats()
 	std::cout << std::endl;
 }
 
-void Character::TakeDanage(int d)
+void Character::TakeDamage(int d)
 {
 	this->hp -= d;
 }

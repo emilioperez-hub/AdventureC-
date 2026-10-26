@@ -19,7 +19,7 @@ public:
 	virtual ~Character();
 	void InitCharacter(std::string N);
 	void PrintStats();
-	void TakeDanage(int d);
+	void TakeDamage(int d);
 	const int DoDamage();
 
 	bool IsAlive();

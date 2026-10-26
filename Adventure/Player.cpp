@@ -36,3 +36,65 @@ void Player::PrintPlayerStats()
 	std::cout << "Luck: " << this->luck << std::endl;
 }
 
+void Player::LevelUp()
+{
+	while (GetExp() >= MaxXp)
+	{
+		SetLevel(GetLevel() + 1);
+		SetExp(GetExp() - MaxXp);
+		MaxXp = GetLevel() * 10;
+		skillpoints++;
+		std::cout << "You leveled up to level: " << GetLevel() << "!" << std::endl;
+	}
+}
+
+void Player::AddStats(int stat, int value)
+{
+	if (skillpoints < value)
+	{
+		std::cout << "You don't have enough skill points." << std::endl;
+	}
+	else
+	{
+		switch (stat)
+		{
+		case 1:
+			this->strength += value;
+			skillpoints -= value;
+			updateStats();
+			break;
+		case 2:
+			this->agility += value;
+			skillpoints -= value;
+			updateStats();
+			break;
+		case 3:
+			this->intelligence += value;
+			skillpoints -= value;
+			updateStats();
+			break;
+		case 4:
+			this->luck += value;
+			skillpoints -= value;
+			updateStats();
+			break;
+		case 5:
+			this->dexterity += value;
+			skillpoints -= value;
+			updateStats();
+			break;
+		default:
+			std::cout << "This stat does not exist." << std::endl;
+			break;
+		}
+	}
+}
+
+void Player::updateStats()
+{
+	SetHP((this->intelligence * 2) / (this->dexterity - 3));
+	SetDamageMin(this->strength - 2);
+	SetDamageMax(this->strength * 2);
+	SetDefence((this->agility * 2) / (this->luck - 3));
+}
+
