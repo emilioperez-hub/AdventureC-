@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <Fstream>
 #include "Character.h"
 #include "Player.h"
 #include "Event.h"

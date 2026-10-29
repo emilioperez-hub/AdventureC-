@@ -1,50 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\",
+  "WorkspaceRootPath": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Adventure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C8D942BD-BBE5-4830-8987-94AB621ED943}|Adventure\\Adventure.vcxproj|solutionrelative:Adventure\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,16 +53,16 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 161,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 165,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Enemy.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Enemy.h",
               "RelativeDocumentMoniker": "Adventure\\Enemy.h",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Enemy.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Enemy.h",
               "RelativeToolTip": "Adventure\\Enemy.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -71,37 +71,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Character.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Character.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Character.h",
               "RelativeDocumentMoniker": "Adventure\\Character.h",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Character.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Character.h",
               "RelativeToolTip": "Adventure\\Character.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-15T17:27:04.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Player.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Player.h",
               "RelativeDocumentMoniker": "Adventure\\Player.h",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Player.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Player.h",
               "RelativeToolTip": "Adventure\\Player.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-19T15:22:37.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Event.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Event.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Event.h",
               "RelativeDocumentMoniker": "Adventure\\Event.h",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Event.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Event.h",
               "RelativeToolTip": "Adventure\\Event.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -110,13 +110,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Game.h",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Game.h",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Game.h",
               "RelativeDocumentMoniker": "Adventure\\Game.h",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Game.h",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Game.h",
               "RelativeToolTip": "Adventure\\Game.h",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAewB4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-15T17:10:59.333Z",
               "EditorCaption": ""
@@ -124,42 +124,42 @@
           ]
         },
         {
-          "DockedWidth": 239,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 235,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Player.cpp",
               "RelativeDocumentMoniker": "Adventure\\Player.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Player.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Player.cpp",
               "RelativeToolTip": "Adventure\\Player.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-19T15:22:42.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Event.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Event.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Event.cpp",
               "RelativeDocumentMoniker": "Adventure\\Event.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Event.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Event.cpp",
               "RelativeToolTip": "Adventure\\Event.cpp",
-              "ViewState": "AgIAADIAAAAAAAAAAADwv1EAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-22T15:21:16.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Character.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Character.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Character.cpp",
               "RelativeDocumentMoniker": "Adventure\\Character.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Character.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Character.cpp",
               "RelativeToolTip": "Adventure\\Character.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -168,11 +168,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Enemy.cpp",
               "RelativeDocumentMoniker": "Adventure\\Enemy.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Enemy.cpp",
               "RelativeToolTip": "Adventure\\Enemy.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -181,24 +181,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Game.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Game.cpp",
               "RelativeDocumentMoniker": "Adventure\\Game.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Game.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Game.cpp",
               "RelativeToolTip": "Adventure\\Game.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGUAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-15T17:13:37.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Adventure.cpp",
-              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Adventure.cpp",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Adventure.cpp",
               "RelativeDocumentMoniker": "Adventure\\Adventure.cpp",
-              "ToolTip": "C:\\Users\\Alumno\\Desktop\\AdventureC-\\Adventure\\Adventure.cpp",
+              "ToolTip": "C:\\Users\\Alumno\\Documents\\Github\\AdventureC\u002B\u002B\\Adventure\\Adventure.cpp",
               "RelativeToolTip": "Adventure\\Adventure.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

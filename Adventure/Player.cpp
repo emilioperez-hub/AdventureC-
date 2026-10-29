@@ -7,6 +7,8 @@ Player::Player() :Character()
 	this->dexterity = 5;
 	this->intelligence = 5;
 	this->luck = 5;
+	this->MaxXp = 10;
+	this->skillpoints = 0;
 }
 
 Player::~Player()
@@ -96,5 +98,55 @@ void Player::updateStats()
 	SetDamageMin(this->strength - 2);
 	SetDamageMax(this->strength * 2);
 	SetDefence((this->agility * 2) / (this->luck - 3));
+}
+
+std::string Player::SaveStats()
+{
+	return this->GetName() + " " +
+		std::to_string(this->GetLevel()) + " " +
+		std::to_string(this->GetHP()) + " " +
+		std::to_string(this->GetExp()) + " " +
+		std::to_string(this->GetDamageMin()) + " " +
+		std::to_string(this->GetDamageMax()) + " " +
+		std::to_string(this->GetDefence()) + " " +
+		std::to_string(this->GetStrength()) + " " +
+		std::to_string(this->GetAgility()) + " " +
+		std::to_string(this->GetDexterity()) + " " +
+		std::to_string(this->GetIntelligence()) + " " +
+		std::to_string(this->GetLuck()) + " " +
+		std::to_string(this->GetSkillPoints());
+}
+
+void Player::LoadSavedStats(const std::string& filename)
+{
+	std::ifstream inFile(filename);
+	if (!inFile.is_open())
+	{
+		std::cerr << "ERROR: Can't open file" << filename <<std::endl;
+		return;
+	}
+	std::string n = "";
+	int l;
+	int hp;
+	int xp;
+	int dmin;
+	int dmax;
+	int d;
+
+	inFile >> n
+		>> l
+		>> hp
+		>> xp
+		>> dmin
+		>> dmax
+		>> d;
+		inFile.close();
+		SetName(n);
+		SetLevel(l);
+		SetHP(hp);
+		SetExp(xp);
+		SetDamageMin(dmin);
+		SetDamageMax(dmax);
+		SetDefence(d);
 }
 

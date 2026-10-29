@@ -21,8 +21,11 @@ void Game::MainMenu()
 	std::cout << " 0: Quit Game" << std::endl;
 	std::cout << " 1: Player Stats" << std::endl;
 	std::cout << " 2: New Event" << std::endl;
-	std::cout << " 3: Level up" << std::endl;
-	std::cout << " 4: skill up" << std::endl;
+	std::cout << " 3: Enemy Stats" << std::endl;
+	std::cout << " 4: Level up" << std::endl;
+	std::cout << " 5: skill up" << std::endl;
+	std::cout << " 6: save Player" << std::endl;
+	std::cout << " 7: load Player" << std::endl;
 
 	std::cout << " Enter Choice" << std::endl;
 	std::cin >> choice;
@@ -39,10 +42,19 @@ void Game::MainMenu()
 		newEvent();
 		break;
 	case 3:
-		player.LevelUp();
+		NewEnemy();
 		break;
 	case 4:
+		player.LevelUp();
+		break;
+	case 5:
 		SkillUp();
+		break;
+	case 6:
+		player.SaveStats();
+		break;
+	case 7:
+		LoadPlayer();
 		break;
 	default:
 		std::cout << "Invalid Option" << std::endl;
@@ -52,10 +64,20 @@ void Game::MainMenu()
 
 void Game::SavePlayer()
 {
+	std::string PlayerFile;
+	std::ofstream outFile(PlayerFile);
+	if (outFile.is_open())
+		outFile << player.SaveStats() << " ";
+	else
+		std::cout << "Cant Save Game :(" << std::endl;
+	outFile.close();
+	std::cout << "Game Saved :)" << std::endl;
 }
 
 void Game::LoadPlayer()
 {
+	std::string PlayerFile = "savePlayer.txt";
+	player.LoadSavedStats(PlayerFile);
 }
 
 void Game::NewPlayer()

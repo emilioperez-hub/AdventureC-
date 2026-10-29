@@ -94,44 +94,45 @@ void Event::EnemyEncounter(Player& p)
 			std::cout << "3: Character Sheet" << std::endl;
 			std::cout << "0: escape" << std::endl;
 
-		}
-		std::cin >> choice;
-		switch (choice)
-		{
-		case 0:
-			if (escapeRand > 25)
-			{
-				std::cout << "Escaped...." << std::endl;
-				escape = true;
-			}
-			break;
-		case 1:
-			std::system("cls");
-			if (attackRoll > (50 - p.GetDexterity()))
-			{
-				std::cout << "Player hit Enemy" << std::endl;
-				baseEnemy->TakeDamage(p.DoDamage());
-			}
-			break;
-		case 2:
-			if (defenceRoll > 50 - p.DoDamage())
-			{
-				std::cout << "Player is defending" << std::endl;
-			}
-			break;
 
-		case 3:
-			p.PrintPlayerStats();
-			break;
-		case 4:
-			baseEnemy->PrintStats();
-			break;
-		default:
-			std::cout << "invalid Option" << std::endl;
-			break;
+			std::cin >> choice;
+			switch (choice)
+			{
+			case 0:
+				if (escapeRand > 25)
+				{
+					std::cout << "Escaped...." << std::endl;
+					escape = true;
+				}
+				break;
+			case 1:
+				std::system("cls");
+				if (attackRoll > (50 - p.GetDexterity()))
+				{
+					std::cout << "Player hit Enemy" << std::endl;
+					baseEnemy->TakeDamage(p.DoDamage());
+				}
+				break;
+			case 2:
+				if (defenceRoll > 50 - p.DoDamage())
+				{
+					std::cout << "Player is defending" << std::endl;
+				}
+				break;
 
+			case 3:
+				p.PrintPlayerStats();
+				break;
+			case 4:
+				baseEnemy->PrintStats();
+				break;
+			default:
+				std::cout << "invalid Option" << std::endl;
+				break;
+
+			}
+			playerTurn = false;
 		}
-		playerTurn = false;
 		if (playerDefending)
 		{
 		}
@@ -143,6 +144,7 @@ void Event::EnemyEncounter(Player& p)
 				enemyDefeated = true;
 				std::cout << "Enemy hit Player" << std::endl;
 			}
+			playerTurn = true;
 		}
 	}
 }

@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+#include <fstream>
 #include "Character.h"
 class Player :
 	public Character
@@ -21,6 +23,8 @@ public:
 	void LevelUp();
 	void AddStats(int stat, int value);
 	void updateStats();
+	std::string SaveStats();
+	void LoadSavedStats(const std::string& filename);
 
 	//Gets
 	int GetStrength() { return strength; }

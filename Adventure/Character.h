@@ -34,6 +34,7 @@ public:
 	int GetDefence() { return defence; }
 
 	//Sets
+	void SetName(std::string n) { name = n; }
 	void SetLevel(int l) { level = l; }
 	void SetHP(int h) { hp = h; }
 	void SetExp(int e) { exp = e; }
