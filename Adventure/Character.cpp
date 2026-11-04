@@ -39,8 +39,7 @@ void Character::TakeDamage(int d)
 
 const int Character::DoDamage()
 {
-
-	return (rand() % (this->damageMax -this->damageMin+1)) + this->damageMin;
+	return (rand() % (this->damageMax -this->damageMin+1)) + this->damageMin * 2;
 }
 
 bool Character::IsAlive()

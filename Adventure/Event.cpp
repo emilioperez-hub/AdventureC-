@@ -8,54 +8,17 @@ Event::~Event()
 {
 }
 
-Enemy* Event::GenerateEnemy(Player& p, int enemyID)
-{
-	std::string n[3] = { "GOD", "JESUS", "PEDRO" };
-	int level = p.GetLevel();
-	int hp = level * 10;
-	int damage = rand() % p.GetDamageMin() + 1;
-	int defence = rand() % level;
-	int exp = level * 10;
-	switch (enemyID)
-	{
-	case 0:
-		level = p.GetLevel() * 15;
-		hp = level * 100;
-		damage = rand() % p.GetDamageMin() * 10 + 10;
-		defence = rand() % level * 10;
-		exp = level * 1000;
-		break;
-	case 1:
-		level = p.GetLevel() * 10;
-		hp = level * 50;
-		damage = rand() % p.GetDamageMin() * 5 + 10;
-		defence = rand() % level * 5;
-		exp = level * 100;
-		break;
-	case 2:
-		level = p.GetLevel() * 5;
-		hp = level * 25;
-		damage = rand() % p.GetDamageMin() * 2 + 10;
-		defence = rand() % level + 2;
-		exp = level * 10;
-		break;
-	default:
-		return nullptr;
-		break;
-	}
-	return new Enemy(n[enemyID], level, hp, damage, defence, exp);
-}
 
 void Event::GenerateEvent(Player& p)
 {
 	srand(static_cast<unsigned int>(time(0)));
 	int i = rand() % 10;
-	if (i < 10)
+	if (7 < i && i < 10)
 	{
 		std::cout << "Enemy Encounter" << std::endl;
 		EnemyEncounter(p);
 	}
-	else if (i < 7)
+	else if (i < 3 && i < 7)
 	{
 		std::cout << "Puzzle Encounter" << std::endl;
 		PuzzleEncounter(p);
@@ -118,7 +81,7 @@ void Event::EnemyEncounter(Player& p)
 	default:
 		break;
 	}
-	baseEnemy = GenerateEnemy(p, randName);
+	baseEnemy = new Enemy(n[randName], level, hp, damage, defence, exp);
 	int attackRoll = rand() % 100 + 1;
 	int defenceRoll = rand() % 100 + 1;
 	int escapeRand = rand() % 100 + 1;
@@ -200,11 +163,6 @@ void Event::EnemyEncounter(Player& p)
 		{
 			std::cout << "--------Enemy Turn---------" << std::endl;
 
-			if (!baseEnemy->IsAlive())
-			{
-				enemyDefeated = true;
-				std::cout << "Enemy hit Player" << std::endl;
-			}
 			switch (randName)
 			{
 			case 0:
@@ -222,35 +180,43 @@ void Event::EnemyEncounter(Player& p)
 			default:
 				break;
 			}
+			//checa si el enemy esta vivo.
+			if (!baseEnemy->IsAlive())
+			{
+				enemyDefeated = true;
+				std::cout << "You win" << std::endl;
+			}
+			if (!p.IsAlive())
+			{
+				playerDefeated = true;
+				std::cout << "Wa Wa, You lost :(" << std::endl;
+				p.LoadSavedStats("savePlayer.txt");
+			}
 			playerTurn = true;
 		}
-	}
-	if (p.GetHP() <= 0)
-	{
-		playerDefeated = true;
-	}
-	else
-	{
-		playerDefeated = false;
-	}
-
-	if (playerDefeated)
-	{
-		std::cout << "You have been defeated by: " << baseEnemy->GetName() << std::endl;
-	}
-	else if (enemyDefeated)
-	{
-		std::cout << "You have defeated: " << baseEnemy->GetName() << std::endl;
-		p.SetExp(p.GetExp() + baseEnemy->GetExp());
-		p.LevelUp();
-	}
-	else if (escape)
-	{
-		std::cout << "You have escaped" << std::endl;
 	}
 }
 
 void Event::PuzzleEncounter(Player& p)
 {
-
+	std::system("cls");
+	int RandNum = rand() % 3 + 1;
+	int playerGuess = 0;
+	std::cout << "You have encountered a puzzle!" << std::endl;
+	std::cout << "Pick a number from 1 to 3 (EZZZ)" << std::endl;
+	std::cin >> playerGuess;
+	for (int i = 0; i < 3; i++)
+	{
+		if (playerGuess == RandNum)
+		{
+			std::cout << "You have solved the puzzle!" << std::endl;
+			p.SetExp(p.GetExp() + 10);
+			break;
+		}
+		else
+		{
+			std::cout << "Nuh uh, wrong" << std::endl;
+			break;
+		}
+	}
 }
