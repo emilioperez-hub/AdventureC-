@@ -1,2 +1,8 @@
-﻿  Event.cpp
+﻿  Adventure.cpp
+  Character.cpp
+  Enemy.cpp
+  Event.cpp
+  Game.cpp
+  Player.cpp
+  Generating Code...
   Adventure.vcxproj -> C:\Users\Alumno\Documents\BD\AdventureC-\x64\Debug\Adventure.exe

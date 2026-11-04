@@ -52,7 +52,7 @@ void Game::MainMenu()
 		SkillUp();
 		break;
 	case 6:
-		player.SaveStats();
+		SavePlayer();
 		break;
 	case 7:
 		LoadPlayer();
@@ -65,7 +65,7 @@ void Game::MainMenu()
 
 void Game::SavePlayer()
 {
-	std::string PlayerFile;
+	std::string PlayerFile = "savePlayer.txt";
 	std::ofstream outFile(PlayerFile);
 	if (outFile.is_open())
 		outFile << player.SaveStats() << " ";
