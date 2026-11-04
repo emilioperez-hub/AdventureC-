@@ -90,7 +90,7 @@ void Game::NewEnemy()
 {
 	srand(static_cast<unsigned int>(time(0)));
 
-	int EnemyChoice;
+	int EnemyChoice = 0;
 	std::cout << "choose enemy: " << std::endl;
 	std::cout << "0:GOD " << std::endl;
 	std::cout << "1:Jesus " << std::endl;
