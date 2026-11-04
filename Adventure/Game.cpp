@@ -88,55 +88,7 @@ void Game::NewPlayer()
 
 void Game::NewEnemy()
 {
-	srand(static_cast<unsigned int>(time(0)));
-
-	int EnemyChoice = 0;
-	std::cout << "choose enemy: " << std::endl;
-	std::cout << "0:GOD " << std::endl;
-	std::cout << "1:Jesus " << std::endl;
-	std::cout << "2:Pedro " << std::endl;
-	std::cin >> EnemyChoice;
-	/*switch (EnemyChoice)
-	{
-	case 0:
-
-		std::string name = "GOD";
-		int level = (rand() % 10);
-		int hp = (rand() % 10);
-		int xp = (rand() % 2);
-		int damage = (rand() % 10);
-		int defence = (rand() % 10);
-		enemy = new Enemy(name, level, hp, damage, defence, xp);
-		enemy->PrintEnemyStats();
-
-		break;
-	case 1:
-
-		std::string name = "Jesus";
-		int level = (rand() % 10);
-		int hp = (rand() % 10);
-		int xp = (rand() % 2);
-		int damage = (rand() % 10);
-		int defence = (rand() % 10);
-		enemy = new Enemy(name, level, hp, damage, defence, xp);
-		enemy->PrintEnemyStats();
-
-		break;
-	case 2:
-
-		std::string name = "Pedro";
-		int level = (rand() % 10);
-		int hp = (rand() % 10);
-		int xp = (rand() % 2);
-		int damage = (rand() % 10);
-		int defence = (rand() % 10);
-		enemy = new Enemy(name, level, hp, damage, defence, xp);
-		enemy->PrintEnemyStats();
-		break;
-	default:
-		std::cout << "enemy not found" << std::endl;
-		break;
-	}*/
+	std::cout << "Generating Enemy..." << std::endl;
 }
 
 void Game::PrintPlayerStats()

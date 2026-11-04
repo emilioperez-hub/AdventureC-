@@ -11,6 +11,7 @@ class Game
 {
 private:
 	Player player;
+	Event currentEvent;
 	Enemy* enemy;
 	int choice;
 	bool playing;

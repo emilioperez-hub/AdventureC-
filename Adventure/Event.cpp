@@ -8,6 +8,44 @@ Event::~Event()
 {
 }
 
+Enemy* Event::GenerateEnemy(Player& p, int enemyID)
+{
+	std::string n[3] = { "GOD", "JESUS", "PEDRO" };
+	int level = p.GetLevel();
+	int hp = level * 10;
+	int damage = rand() % p.GetDamageMin() + 1;
+	int defence = rand() % level;
+	int exp = level * 10;
+	switch (enemyID)
+	{
+	case 0:
+		level = p.GetLevel() * 15;
+		hp = level * 100;
+		damage = rand() % p.GetDamageMin() * 10 + 10;
+		defence = rand() % level * 10;
+		exp = level * 1000;
+		break;
+	case 1:
+		level = p.GetLevel() * 10;
+		hp = level * 50;
+		damage = rand() % p.GetDamageMin() * 5 + 10;
+		defence = rand() % level * 5;
+		exp = level * 100;
+		break;
+	case 2:
+		level = p.GetLevel() * 5;
+		hp = level * 25;
+		damage = rand() % p.GetDamageMin() * 2 + 10;
+		defence = rand() % level + 2;
+		exp = level * 10;
+		break;
+	default:
+		return nullptr;
+		break;
+	}
+	return new Enemy(n[enemyID], level, hp, damage, defence, exp);
+}
+
 void Event::GenerateEvent(Player& p)
 {
 	srand(static_cast<unsigned int>(time(0)));
@@ -80,7 +118,7 @@ void Event::EnemyEncounter(Player& p)
 	default:
 		break;
 	}
-	baseEnemy = new Enemy(n[randName], level, hp, damage, defence, exp);
+	baseEnemy = GenerateEnemy(p, randName);
 	int attackRoll = rand() % 100 + 1;
 	int defenceRoll = rand() % 100 + 1;
 	int escapeRand = rand() % 100 + 1;
@@ -88,7 +126,7 @@ void Event::EnemyEncounter(Player& p)
 	{
 		if (playerTurn)
 		{
-			std::cout << "You have encountered: " << n[randName] << std::endl;
+			std::cout << "You have encountered: " << baseEnemy->GetName()<< std::endl;
 			std::cout << "---------Your Turn---------" << std::endl;
 			std::cout << "Choose your action: " << std::endl;
 			std::cout << "1: Attack" << std::endl;
@@ -195,14 +233,14 @@ void Event::EnemyEncounter(Player& p)
 	{
 		playerDefeated = false;
 	}
-	
+
 	if (playerDefeated)
 	{
-		std::cout << "You have been defeated by: " << n[randName] << std::endl;
+		std::cout << "You have been defeated by: " << baseEnemy->GetName() << std::endl;
 	}
 	else if (enemyDefeated)
 	{
-		std::cout << "You have defeated: " << n[randName] << std::endl;
+		std::cout << "You have defeated: " << baseEnemy->GetName() << std::endl;
 		p.SetExp(p.GetExp() + baseEnemy->GetExp());
 		p.LevelUp();
 	}

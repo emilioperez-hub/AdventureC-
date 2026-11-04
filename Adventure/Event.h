@@ -12,7 +12,7 @@ private:
 public:
 	Event();
 	~Event();
-
+	Enemy* GenerateEnemy(Player& p, int enemyID);
 	void GenerateEvent(Player& p);
 	void EnemyEncounter(Player& p);
 	void PuzzleEncounter(Player& p);
