@@ -6,7 +6,7 @@ Player::Player() :Character()
 	this->agility = 5;
 	this->dexterity = 5;
 	this->intelligence = 5;
-	this->luck = 5;
+	this->luck = 7;
 	this->MaxXp = 10;
 	this->skillpoints = 0;
 }
@@ -149,4 +149,5 @@ void Player::LoadSavedStats(const std::string& filename)
 		SetDamageMax(dmax);
 		SetDefence(d);
 }
+
 
